@@ -1,11 +1,11 @@
- تصميم ChatGPT المتفاعل مع العميل بحيث قم بضافة زر تنقل الى ChatGPT 
+تصميم ChatGPT المتفاعل مع العميل بحيث قم بضافة زر تنقل الى ChatGPT 
 
 ---
 
 ### 🚀 **التصميم المتكامل لواجهة الذئب الكوني (الأسود الذهبي)**
 
 #### 📂 **هيكل الملفات:**
-```
+\`\`\`
 src/
 ├── components/
 │   ├── CosmicSidebar.tsx
@@ -17,10 +17,10 @@ src/
 │       └── page.tsx
 └── lib/
     └── ai-integration.ts
-```
+\`\`\`
 
 #### 💻 **شفرة الواجهة الرئيسية (`app/dashboard/page.tsx`):**
-```tsx
+\`\`\`tsx
 import CosmicSidebar from '@/components/CosmicSidebar';
 import AiAssistant from '@/components/AiAssistant';
 import TaskManager from '@/components/TaskManager';
@@ -85,14 +85,14 @@ export default function WolfDashboard() {
     </div>
   );
 }
-```
+\`\`\`
 
 ---
 
 ### 🧩 **مكونات النظام المتقدمة:**
 
 #### 1. **الشريط الجانبي الكوني (`components/CosmicSidebar.tsx`):**
-```tsx
+\`\`\`tsx
 export default function CosmicSidebar() {
   return (
     <div className="w-80 border-r border-[#1F1F1F] p-6">
@@ -148,10 +148,10 @@ export default function CosmicSidebar() {
     </div>
   );
 }
-```
+\`\`\`
 
 #### 2. **مساعد الذكاء الكوني (`components/AiAssistant.tsx`):**
-```tsx
+\`\`\`tsx
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -226,10 +226,10 @@ export default function AiAssistant() {
     </div>
   );
 }
-```
+\`\`\`
 
 #### 3. **نظام إدارة المهام (`components/TaskManager.tsx`):**
-```tsx
+\`\`\`tsx
 import { useState } from 'react';
 
 export default function TaskManager() {
@@ -334,14 +334,14 @@ export default function TaskManager() {
     </div>
   );
 }
-```
+\`\`\`
 
 ---
 
 ### 🎨 **نظام التصميم الذري (Atomic Design System):**
 
 #### 1. **نظام الألوان الكوني:**
-```json
+\`\`\`json
 {
   "primary": "#D4AF37",   // الذهب الكوني
   "secondary": "#8A2BE2", // الأرجواني النجمي
@@ -352,10 +352,10 @@ export default function TaskManager() {
   "text": "#E6E6E6",      // ضوء النجوم
   "text-muted": "#A0A0A0" // غبار النجوم
 }
-```
+\`\`\`
 
 #### 2. **نظام الطباعة:**
-```css
+\`\`\`css
 :root {
   --font-heading: 3.5rem / 1.2 'IBM Plex Sans Arabic', sans-serif;
   --font-subheading: 2.25rem / 1.3 'IBM Plex Sans Arabic', sans-serif;
@@ -363,10 +363,10 @@ export default function TaskManager() {
   --font-body: 1.1rem / 1.8 'IBM Plex Sans Arabic', sans-serif;
   --font-small: 0.9rem / 1.6 'IBM Plex Sans Arabic', sans-serif;
 }
-```
+\`\`\`
 
 #### 3. **نظام الظلال والآثار:**
-```css
+\`\`\`css
 .cosmic-shadow {
   box-shadow: 
     0 10px 35px rgba(212, 175, 55, 0.15),
@@ -378,12 +378,12 @@ export default function TaskManager() {
     0 0 15px rgba(212, 175, 55, 0.3),
     0 0 30px rgba(138, 43, 226, 0.2);
 }
-```
+\`\`\`
 
 ---
 
 ### ⚙️ **تكوين Tailwind (`tailwind.config.js`):**
-```javascript
+\`\`\`javascript
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -414,7 +414,7 @@ module.exports = {
   },
   plugins: [],
 }
-```
+\`\`\`
 
 ---
 
@@ -435,24 +435,24 @@ module.exports = {
 
 ### 🚀 **خطوات التنفيذ الفوري:**
 1. **تهيئة المشروع:**
-```bash
+\`\`\`bash
 npx create-next-app@latest wolf-dashboard --typescript --tailwind --eslint
 cd wolf-dashboard
-```
+\`\`\`
 
 2. **تثبيت الاعتمادات:**
-```bash
+\`\`\`bash
 pnpm add framer-motion @heroicons/react
-```
+\`\`\`
 
 3. **إضافة خطوط Google:**
-```html
+\`\`\`html
 <!-- في app/layout.tsx -->
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-```
+\`\`\`
 
 4. **تشغيل النظام:**
-```bash
+\`\`\`bash
 pnpm dev
 
 
