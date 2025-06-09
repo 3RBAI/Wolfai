@@ -137,7 +137,7 @@ wolfaiportal/
 
 ### **🌐الرابط المباشر**
 
-**المنصة الحية : **[https://vercel.com/omanai/v0-wolfaiportal](https://vercel.com/omanai/v0-wolfaiportal) [](https://vercel.com/omanai/v0-wolfaiportal)
+**المنصة الحية : https://v0-wolfaiportal.vercel.app 
 
 ### **🔧 توجيهات التطوير**
 
