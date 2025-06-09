@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* النظام اللوني الكوني الموحد */
+    --background: 222 84% 5%; /* #0A0A0A */
+    --foreground: 210 40% 98%; /* #E6E6E6 */
+
+    --primary: 43 74% 49%; /* #D4AF37 */
+    --primary-foreground: 222 84% 5%;
+
+    --secondary: 271 76% 29%; /* #8A2BE2 */
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 221 83% 53%; /* #2D8CFF */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 348 83% 47%; /* #DC143C */
+    --destructive-foreground: 210 40% 98%;
+
+    --muted: 215 28% 17%; /* #1A1A1A */
+    --muted-foreground: 215 20% 65%; /* #A0A0A0 */
+
+    --card: 222 84% 8%; /* #1A1A1A */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --border: 43 74% 25%; /* #2D2D2D */
+    --input: 43 74% 25%;
+    --ring: 43 74% 49%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: "IBM Plex Sans Arabic", "Inter", sans-serif;
+  }
+}
+
+/* شريط التمرير المخصص */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2d2d2d #0a0a0a;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0a0a0a;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* تأثيرات الحركة المتقدمة */
+@keyframes cosmic-glow {
+  0% {
+    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37;
+    filter: brightness(1);
+  }
+  100% {
+    text-shadow: 0 0 20px #d4af37, 0 0 30px #d4af37, 0 0 40px #a67c00;
+    filter: brightness(1.2);
+  }
+}
+
+.stellar-glow {
+  background: linear-gradient(135deg, #d4af37 0%, #a67c00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: cosmic-glow 2s ease-in-out infinite alternate;
+}
+
+.quantum-card {
+  background: linear-gradient(145deg, rgba(26, 26, 46, 0.8) 0%, rgba(15, 15, 26, 0.9) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.quantum-card:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+  transform: translateY(-8px);
+}
+
+/* نظام الأزرار الموحد */
+.event-horizon-button {
+  background: linear-gradient(135deg, #d4af37 0%, #a67c00 100%);
+  color: #0f0f1a;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-horizon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+}
+
+.event-horizon-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.event-horizon-button:hover::before {
+  left: 100%;
+}
+
+/* النظام الشبكي الكوني */
+.cosmic-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1024px) {
+  .cosmic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cosmic-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cosmic-heading-xl {
+    font-size: 2.5rem;
+  }
+
+  .cosmic-heading-lg {
+    font-size: 2rem;
+  }
+}
+
+/* تأثيرات الجسيمات الكونية */
+.cosmic-particles-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* الضباب الذهبي */
+.golden-fog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 50%, rgba(212, 175, 55, 0.02) 100%);
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* النظام الطباعي الهرمي الصارم */
+.cosmic-heading-xl {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.cosmic-heading-lg {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.cosmic-heading-md {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.cosmic-body {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
