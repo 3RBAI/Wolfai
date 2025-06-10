@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Send, Bot, User, Brain, Zap, Sparkles, Crown, Rocket, Settings, Copy, RotateCcw } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import { toast } from "@/hooks/use-toast"
 
 interface Message {
   id: string
@@ -86,7 +86,6 @@ export function QuantumChatInterface() {
   const [isLoading, setIsLoading] = useState(false)
   const [apiKey, setApiKey] = useState("")
   const messagesEndRef = useRef<HTMLDivElement>(null)
-  const { toast } = useToast()
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })

@@ -4,8 +4,7 @@ import { Inter, Noto_Sans_Arabic } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
 import { cn } from "@/lib/utils"
-import { Toaster as SonnerToaster } from "@/components/ui/sonner" // For AI SDK UI
-import { Toaster as ShadcnToaster } from "@/components/ui/toaster" // For general toasts
+import { Toaster } from "@/components/ui/toaster" // Only use shadcn toaster
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const notoSansArabic = Noto_Sans_Arabic({
@@ -39,8 +38,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="golden-fog" />
           {children}
-          <SonnerToaster />
-          <ShadcnToaster />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

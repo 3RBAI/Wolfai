@@ -1,6 +1,6 @@
 `<CodeProject id="wolfaiportal">````markdown file="README.md"
 ...
-```
+\`\`\`
 
 ---
 
@@ -28,13 +28,13 @@
 
 ### 🚀 **الوزن الخفيف**
 
-```باش
+\`\`\`باش
 
 # معايير الأداء
 
 درجة الأداء: 98/100 ⚡ إمكانية الوصول: 100/100 ♿ أفضل الممارسات: 95/100 ✅ تحسين محركات البحث: 100/100 🔍
 
-```plaintext
+\`\`\`plaintext
 
 ---
 
@@ -45,11 +45,11 @@
 Node.js >= 18.0.0
 npm >= 9.0.0
 Git >= 2.30.0
-```
+\`\`\`
 
 ### **التثبيت السريع**
 
-```باش
+\`\`\`باش
 
 # استنساخ المشروع وضع
 
@@ -68,7 +68,7 @@ cp .env.example .env.local
 
 npm تشغيل dev
 
-```plaintext
+\`\`\`plaintext
 
 ### **إعداد متغيرات البيئة**
 \`\`\`env
@@ -85,7 +85,7 @@ SUPABASE_ANON_KEY=your_supabase_key
 # إعدادات التيليجرام
 TELEGRAM_BOT_TOKEN=your_telegram_token
 TELEGRAM_WEBHOOK_URL=your_webhook_url
-```
+\`\`\`
 
 ---
 
@@ -93,11 +93,11 @@ TELEGRAM_WEBHOOK_URL=your_webhook_url
 
 ### **نظام الألوان**
 
-```css :root { /* الألوان الأساسية*/ --cosmic-black: `#0A0A0A`؛ /*الكون الأسود العميق*/ --cosmic-dark: `#1A1A1A`؛ /*رمادي فحمي*/ --الذهب الكوني: `#D4AF37`؛ /*ذهبي*/ --cosmic-purple: `#8A2BE2`؛ /*زنجي نجمي*/ --الأزرق الكوني: `#2D8CFF`؛ /*أزرق سماوي */
+\`\`\`css :root { /* الألوان الأساسية*/ --cosmic-black: `#0A0A0A`؛ /*الكون الأسود العميق*/ --cosmic-dark: `#1A1A1A`؛ /*رمادي فحمي*/ --الذهب الكوني: `#D4AF37`؛ /*ذهبي*/ --cosmic-purple: `#8A2BE2`؛ /*زنجي نجمي*/ --الأزرق الكوني: `#2D8CFF`؛ /*أزرق سماوي */
 
 /* الألوان المساعدة*/ --text-primary: `#E6E6E6`; /*أبيض فاتح*/ --text-secondary: `#A0A0A0`; /*رمادي فاتح*/ --border-color: `#2D2D2D`; /*حدود */ }
 
-```plaintext
+\`\`\`plaintext
 
 ### **التايبوجرافي**
 \`\`\`css
@@ -105,13 +105,13 @@ TELEGRAM_WEBHOOK_URL=your_webhook_url
 --font-arabic: 'IBM Plex Sans Arabic', sans-serif;
 --font-english: 'Inter', sans-serif;
 --font-code: 'Fira Code', monospace;
-```
+\`\`\`
 
 ---
 
 ## 📋 **تأسيس المشروع - هيكل المشروع**
 
-```plaintext
+\`\`\`plaintext
 wolfaiportal/
 ├── 🏗️ app/                    # Next.js App Router
 │   ├── 🏠 page.tsx            # الصفحة الرئيسية
@@ -129,7 +129,7 @@ wolfaiportal/
 ├── 🎨 styles/                 # ملفات التنسيق
 ├── 📜 scripts/                # نصوص التشغيل
 └── 📁 public/                 # الملفات العامة
-```
+\`\`\`
 
 ---
 
@@ -141,7 +141,7 @@ wolfaiportal/
 
 ### **🔧 توجيهات التطوير**
 
-```باش
+\`\`\`باش
 
 # للعمل التطويري
 
@@ -163,7 +163,7 @@ npm run lint
 
 اختبار تشغيل npm
 
-```plaintext
+\`\`\`plaintext
 
 ### **📊 مراقبة الأداء**
 \`\`\`bash
@@ -175,7 +175,7 @@ npm run lighthouse
 
 # مراقبة الذاكرة
 npm run memory-check
-```
+\`\`\`
 
 ---
 
@@ -194,13 +194,13 @@ npm run memory-check
 
 ### **مثال للاستخدام**
 
-```استيراد typescript { WolfAI } من '@/lib/wolf-ai';
+\`\`\`استيراد typescript { WolfAI } من '@/lib/wolf-ai';
 
 ثابت wolfai = جديد WolfAI({ نموذج: 'wolf-ai-v1'، مفتاح api: process.env.WOLF_AI_KEY });
 
 const Response = Wait wolfai.chat({ message: "اكتب لي كود React المتقدم"، السياق: "frontend-development"، اللغة: "arabic" });
 
-```plaintext
+\`\`\`plaintext
 
 ---
 
@@ -219,7 +219,7 @@ const Response = Wait wolfai.chat({ message: "اكتب لي كود React الم�
   "build_time": "< 30s",
   "bundle_size": "< 500KB"
 }
-```
+\`\`\`
 
 ### **🎯أداء أفضل**
 
@@ -245,13 +245,13 @@ const Response = Wait wolfai.chat({ message: "اكتب لي كود React الم�
 
 ### **🛡️ أفضل**
 
-```typescript // قراءة البيانات الحساسة import { encrypt, decrypt } from '@/lib/crypto';
+\`\`\`typescript // قراءة البيانات الحساسة import { encrypt, decrypt } from '@/lib/crypto';
 
 // التحقق من صحة الإدخال import { z } from 'zod';
 
 // مسارات واجهة برمجة التطبيقات الخاصة بالحماية import { withAuth } from '@/lib/middleware';
 
-```plaintext
+\`\`\`plaintext
 
 ---
 
@@ -277,7 +277,7 @@ npm run test:all
 
 # التحقق من الأمان
 npm audit
-```
+\`\`\`
 
 ---
 
@@ -294,13 +294,13 @@ npm audit
 
 ### **📊 أرقام مذهلة**
 
-```plaintext
+\`\`\`plaintext
 🎯 معدل الرضا: 98%
 ⚡ سرعة الاستجابة: 0.3s
 🌍 المستخدمون: 10,000+
 📈 معدل النمو: 150%/شهر
 🔥 معدل الاستخدام: 95%
-```
+\`\`\`
 
 ---
 
@@ -346,7 +346,7 @@ npm audit
 
 ## 📄 **الترخيص - رخصة**
 
-```plaintext
+\`\`\`plaintext
 MIT License
 
 Copyright (c) 2025 Wolf AI Portal
@@ -364,7 +364,7 @@ copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-```
+\`\`\`
 
 ---
 
@@ -382,7 +382,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 *© 2025 بوابة وولف للذكاء الاصطناعي. جميع الحقوق محفوظة.*
 
 `</div>
-`````</CodeProject>`تم إنشاء ملف README.md أسطوري يتبع مشروع Wolf AI Portal!
+\`\`\```</CodeProject>`تم إنشاء ملف README.md أسطوري يتبع مشروع Wolf AI Portal!
 
 ### 🏆 **الميزات الإضافية:**
 
@@ -394,5 +394,3 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 6. **💬 معلومات تواصل شاملة** مع جميع المنصات
 7. **📈 بيانات تؤدي ذات** معايير محددة
 8. **🌟 رؤية ملهمة الثقة** في المشروع
-
-
