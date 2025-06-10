@@ -1,8 +1,4 @@
-`<CodeProject id="wolfaiportal">````markdown file="README.md"
-...
-\`\`\`
 
----
 
 ## 🔥 **الميزات وضعة - ميزات أسطورية**
 
